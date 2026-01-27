@@ -23,7 +23,7 @@ export function generateMeta({
   canonical: string
 }): Metadata {
   return {
-    title: `${title} - Sovinens`,
+    title: `${title} - Flwbite`,
     description: description,
     openGraph: {
       images: "images/sovinens.svg",
