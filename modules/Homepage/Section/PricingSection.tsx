@@ -9,23 +9,23 @@ const PricingSection = () => {
         'Halo! Saya tertarik dengan layanan paket starter flwbite untuk klinik saya. Bisakah Anda membantu saya?',
     })
   const plan = {
-    name: 'Starter',
-    price: 'Rp 6.500.000',
-    period: 'sekali bayar',
-    description: 'Mulai sekarang untuk memiliki website dan booking online.',
+    name: '💎 Managed Clinic Growth',
+    price: 'Rp 1.750.000',
+    period: '/bulan',
+    description: 'Mulai sekarang untuk memiliki website klinik profesional tanpa ribet dan siap berkembang.',
     features: [
-      'Full custom website appointment system',
+      'Custom website appointment template',
       'Dashboard analytics real-time',
-      'SEO Optimization (On Page) meningkatkan peluang halaman 1 Google',
-      'Free VPS Free 1 tahun (2 vCPU / 8 GB RAM / ~100 GB NVMe / 8 TB bandwidth)',
-      'Free domain .com (1 tahun)',
-      'Setup & operasional iklan berbasis best practice 1 bulan',
-      'Revisi website 2x selesai development',
-      'Maintenance 1 bulan',
-      'Support system ringan setelah maintenance',
+      'SEO managed (technical & on-page)',
+      'Local SEO basic (Google Maps setup)',
+      'Hosting & server managed',
+      'Domain klinik & SSL security',
+      'Maintenance & monitoring rutin',
+      'Minor update konten (1–2x / bulan)',
+      'Basic ads management (setup & optimasi ringan)'
     ],
     cta: 'Bantu Sekarang',
-    penting: 'Budget iklan minimum 1jt/bulan dan langsung top up di ads',
+    penting: ['Budget iklan minimum 1jt/bulan dan langsung top up di ads', 'minimal kontrak 6 bulan'],
   }
 
   return (
@@ -60,6 +60,7 @@ const PricingSection = () => {
               <h3 className="text-lg font-bold mb-2 text-foreground">{plan.name}</h3>
               <div className="mb-2">
                 <span className="text-2xl font-bold text-foreground">{plan.price}</span>
+                <span className="text-sm text-muted-foreground">{plan.period}</span>
               </div>
               <p className="text-sm text-muted-foreground">{plan.description}</p>
             </div>
@@ -81,9 +82,13 @@ const PricingSection = () => {
               {plan.cta}
             </Button>
             {/* Note Penting */}
-            <p className="mt-3 text-[13px] text-muted-foreground">
-              <span className="font-bold text-red-500">*</span> {plan.penting}
-            </p>
+            <div className="mt-3 space-y-2 text-[13px] text-muted-foreground">
+              {plan.penting.map((item, index) => (
+                <p key={index}>
+                  <span className="font-bold text-red-500">*</span> {item}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </div>
