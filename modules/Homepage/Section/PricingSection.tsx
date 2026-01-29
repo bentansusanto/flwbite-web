@@ -10,7 +10,7 @@ const PricingSection = () => {
     })
   const plan = {
     name: '💎 Managed Clinic Growth',
-    price: 'Rp 1.750.000',
+    price: 'Rp 2.000.000',
     period: '/bulan',
     description: 'Mulai sekarang untuk memiliki website klinik profesional tanpa ribet dan siap berkembang.',
     features: [
@@ -25,7 +25,7 @@ const PricingSection = () => {
       'Basic ads management (setup & optimasi ringan)'
     ],
     cta: 'Bantu Sekarang',
-    penting: ['Budget iklan minimum 1jt/bulan dan langsung top up di ads', 'minimal kontrak 6 bulan'],
+    penting: ['Budget iklan minimum 1jt/bulan dan langsung top up di ads', 'minimal kontrak 3 bulan'],
   }
 
   return (
