@@ -10,7 +10,7 @@ const PricingSection = () => {
     })
   const plan = {
     name: 'Starter',
-    price: 'Rp 7.000.000',
+    price: 'Rp 6.500.000',
     period: 'sekali bayar',
     description: 'Mulai sekarang untuk memiliki website dan booking online.',
     features: [
